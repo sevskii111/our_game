@@ -9,7 +9,11 @@ const express = require('express'),
 const app = express();
 
 //App uses
-app.use(bodyParser(), session(), passport(), cookieParser());
+app.use(bodyParser(), session({
+    secret: "seva"
+}), passport.initialize(), passport.session(), cookieParser());
+app.set('views', './views');
+app.set('view engine', 'pug');
 //Passport setup
 passport.use(new LocalStrategy((username, password, done) => {
     let user;
@@ -32,6 +36,10 @@ app.post('/login',
         res.redirect('/');
     });
 //App routes
+
+app.get('/', (req, res) => {
+    res.render('login');
+});
 
 app.listen(config.port, (err) => {
     if (err) {
