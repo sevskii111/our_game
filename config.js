@@ -7,25 +7,25 @@ module.exports = {
         {
             color: "#b71c1c",
             username: "user1",
-            password: "gsafgash"
+            password: "gds"
         },
         {
             color: "#880e4f",
-            username: "user1",
-            password: "gsafgash"
+            username: "user2",
+            password: "sdg"
         },
         {
             color: "#4a148c",
-            username: "user1",
-            password: "gsafgash"
+            username: "user3",
+            password: "gasb"
         }, {
             color: "#311b92",
-            username: "user1",
-            password: "gsafgash"
+            username: "user4",
+            password: "gahr"
         }, {
             color: "#1a237e",
-            username: "user1",
-            password: "gsafgash"
+            username: "user5",
+            password: "asdw"
         }
     ],
     port: 3000

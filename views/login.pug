@@ -2,7 +2,7 @@
 extends layout
 
 block content
-  .authForm
-  input(type='text' placeholder='Имя пользователя')
-  input(type='password' placeholder="Пароль")
-  button Войти
+  form(action='/login' method='post')
+    input(type='text' name='username' placeholder='Имя пользователя')
+    input(type='password' name='password' placeholder="Пароль")
+    button(type="submit") Войти
