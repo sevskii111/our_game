@@ -1,3 +1,18 @@
 extends layout
 block content
-    - int i = 0
+    script(src="/js/main.js")
+    - for (var i = 1;i <= 3;i++)
+        table.page(pageInd=i)
+            tbody
+                each category in Object.keys(questions[i])
+                    tr.category
+                        td.category-title= category
+                        - var points = 0
+                        each question in questions[i][category]
+                            - points += i * 100
+                            td
+                                div.question(text=question)
+                                    span= points
+    .currQuestion.hidden
+        .currQuestion-text
+        .currQuestion-queue
