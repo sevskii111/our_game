@@ -76,6 +76,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/ask', (req, res) => {
+    queue = [];
     queueEnabled = false;
     if (req.isAuthenticated() && req.user.admin) {
         questionText = req.body.text;
@@ -125,6 +126,11 @@ app.get('/clicked', (req, res) => {
                     timeOuts[req.user.username] = false;
                 }, config.timeout);
             }
+        }
+        else {
+            res.send({
+                success: 1
+            });
         }
     }
 });

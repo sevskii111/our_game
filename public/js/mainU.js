@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $(window).click(function (e) {
+    $(document).click(function (e) {
         $.get('/clicked', (res) => {
             if (!res.success)
             {
@@ -24,5 +24,5 @@ $(document).ready(() => {
                 $('.currQuestion').addClass('hidden');
             }
         });
-    }, 500);
+    }, 2000);
 });
