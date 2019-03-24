@@ -1,9 +1,10 @@
 $(document).ready(() => {
-    $(window).click(function (e) {
+    $('html').css('cursor', 'pointer');
+    $('html').click(function (e) {
         $.get('/clicked', (res) => {
             if (!res.success)
             {
-                $('body').css('background', 'radial-gradient(#0000FF, #455A64)');
+                $('body').css('background', 'radial-gradient(#000011, #455A64)');
                 setTimeout(() => {
                     $('body').css('background', 'radial-gradient(#0000FF, #0000A0)');
                 }, res.timeout);
@@ -24,5 +25,5 @@ $(document).ready(() => {
                 $('.currQuestion').addClass('hidden');
             }
         });
-    }, 500);
+    }, 2000);
 });
