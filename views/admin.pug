@@ -2,7 +2,7 @@ extends layout
 block content
     script(src="/js/socket.js")
     script(src="/js/main.js")
-    - for (var i = 1;i <= 3;i++)
+    - for (var i = 0;i <= 4;i++)
         table.page(pageInd=i)
             tbody
                 each category in Object.keys(questions[i])

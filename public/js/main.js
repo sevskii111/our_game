@@ -12,6 +12,11 @@ $(document).ready(() => {
             $(`.page[pageInd=${index}]`).removeClass('hidden');
         },
         showQuestion = (question, answer = false) => {
+            if (answer) {
+                $('.currQuestion-queue').addClass('hidden');
+            } else {
+                $('.currQuestion-queue').removeClass('hidden');
+            }
             state = 1;
             const q = answer ? 'a' : 'q';
             $('.page').addClass('hidden');
@@ -21,7 +26,10 @@ $(document).ready(() => {
                     audio: question[q].audio
                 },
                 (body) => {
-                    $('.currQuestion-text').text(body.text);
+                    $('.currQuestion-text').text(body.text || '');
+                    if (!body.text) {
+                        enableQueue();
+                    }
                     if (body.image) {
                         $('.currQuestion-image').css('display', 'block');
                         $('.currQuestion-image').attr('src', `data:image/png;base64, ${body.image}`);
@@ -64,14 +72,14 @@ $(document).ready(() => {
 
     showPage(currPage);
     let currQuestion = null;
-    
+
     $(window).keydown(function (e) {
         let code = e.originalEvent.code;
         if (state == 0) {
             if (code == "ArrowDown") {
-                currPage = Math.min(currPage + 1, 3);
-            } else {
-                currPage = Math.max(currPage - 1, 1);
+                currPage = Math.min(currPage + 1, 4);
+            } else if (code == "ArrowUp") {
+                currPage = Math.max(currPage - 1, 0);
             }
             showPage(currPage);
         } else {
