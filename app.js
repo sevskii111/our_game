@@ -175,7 +175,7 @@ io.on('connection', (socket) => {
     socket.emit('check', startTime);
 });
 ////
-http.listen(config.port, (err) => {
+http.listen(config.port || process.env.PORT, (err) => {
     if (err) {
         console.log(`Err listening: ${err}`);
     } else {
