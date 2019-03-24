@@ -12,10 +12,10 @@ block content
                         each question in questions[i][category]
                             - points += i * 100
                             td
-                                div.question(text=question.text image=question.image audio=question.audio)
+                                div.question(question=question)
                                     span= points
     .currQuestion.hidden
-        .currQuestion-image
+        img.currQuestion-image
         .currQuestion-text
         .currQuestion-audio
         .currQuestion-queue

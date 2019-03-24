@@ -1,5 +1,6 @@
 const
     fs = require('fs'),
+    ms = require('mediaserver'),
     express = require('express'),
     bodyParser = require('body-parser'),
     cookieParser = require('cookie-parser'),
@@ -13,6 +14,9 @@ const app = express(),
     http = require('http').Server(app),
     io = require('socket.io')(http);
 
+//
+let currAudio = null;
+//
 
 //App uses
 app.use(
@@ -59,7 +63,7 @@ passport.deserializeUser((username, done) => {
 });
 
 
-
+const startTime = Date.now();
 //App routes
 let queue = [];
 let queueEnabled = false;
@@ -77,21 +81,32 @@ app.get('/', (req, res) => {
 
     }
 });
+let question = {
+    text: null,
+    image: null,
+    audio: null
+}
+app.get('/audio', (req, res) => {
+    if (currAudio) {
+        fs.createReadStream(`./private/sounds/${currAudio}`, 'base64').pipe(res);
+    } else {
+        res.send("");
+    }
+});
 
 app.post('/ask', (req, res) => {
     queue = [];
+    io.emit('queue', queue);
     queueEnabled = false;
     if (req.isAuthenticated() && req.user.admin) {
-        io.emit('question', {
+        currAudio = req.body.audio;
+        question = {
             text: req.body.text,
-            audio: null,
-            image: req.body.image ? fs.readFileSync(`./private/images/${req.body.image}`, 'base64') : null
-        });
-        res.json({
-            text: req.body.text,
-            audio: null,
-            image: req.body.image ? fs.readFileSync(`./private/images/${req.body.image}`, 'base64') : null
-        });
+            image: req.body.image ? fs.readFileSync(`./private/images/${req.body.image}`, 'base64') : null,
+            audio: req.body.audio ? true : false
+        };
+        io.emit('question', question);
+        res.json(question);
     }
 });
 
@@ -125,6 +140,7 @@ app.get('/clicked', (req, res) => {
             if (queueEnabled) {
                 if (queue.indexOf(req.user.color) == -1) {
                     queue.push(req.user.color);
+                    io.emit('queue', queue);
                 }
                 res.send({
                     success: 1
@@ -139,8 +155,7 @@ app.get('/clicked', (req, res) => {
                     timeOuts[req.user.username] = false;
                 }, config.timeout);
             }
-        }
-        else {
+        } else {
             res.send({
                 success: 1
             });
@@ -156,8 +171,8 @@ app.get('/status', (req, res) => {
 });
 /////
 io.on('connection', (socket) => {
-
-    console.log('a user connected');
+    socket.emit('question', question);
+    socket.emit('check', startTime);
 });
 ////
 http.listen(config.port, (err) => {

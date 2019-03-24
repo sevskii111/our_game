@@ -11,17 +11,32 @@ $(document).ready(() => {
             $('.page').addClass('hidden');
             $(`.page[pageInd=${index}]`).removeClass('hidden');
         },
-        showQuestion = (text, image, audio) => {
+        showQuestion = (question, answer = false) => {
             state = 1;
+            const q = answer ? 'a' : 'q';
             $('.page').addClass('hidden');
             $.post('/ask', {
-                    text,
-                    image,
-                    audio
+                    text: question[q].text,
+                    image: question[q].image,
+                    audio: question[q].audio
                 },
                 (body) => {
-                    console.log(body);
-                    $('.currQuestion-text').text(text);
+                    $('.currQuestion-text').text(body.text);
+                    if (body.image) {
+                        $('.currQuestion-image').css('display', 'block');
+                        $('.currQuestion-image').attr('src', `data:image/png;base64, ${body.image}`);
+                    } else {
+                        $('.currQuestion-image').css('display', 'none');
+                    }
+                    if (body.audio) {
+                        var audio = $('.currQuestion-audio');
+                        audio.css('display', 'block');
+                        $.get('/audio', (data) => {
+                            audio.append($(`<audio controls src="data:audio/ogg;base64, ${data}">`));
+                            $('audio')[0].load();
+                            //$('audio')[0].play();
+                        });
+                    }
                     $('.currQuestion').removeClass('hidden');
                 });
         },
@@ -30,16 +45,26 @@ $(document).ready(() => {
                 $('body').css('background', 'radial-gradient(#0000FF, #FFA726)');
             });
         },
-        hideQuestion = () => {
+        hideQuestion = (callback = () => {}) => {
             $.get('/close', () => {
                 state = 0;
                 $('.currQuestion').addClass('hidden');
                 $('body').css('background', 'radial-gradient(#0000FF, #0000A0)');
+
+                if ($('audio').length > 0) {
+                    $('audio')[0].pause();
+                }
+
+
+                $('.currQuestion-audio').html('');
                 showPage(currPage);
+                callback();
             });
         }
 
     showPage(currPage);
+    let currQuestion = null;
+    
     $(window).keydown(function (e) {
         let code = e.originalEvent.code;
         if (state == 0) {
@@ -54,12 +79,18 @@ $(document).ready(() => {
                 hideQuestion();
             } else if (code == 'Space') {
                 enableQueue();
+            } else if (code == 'KeyA') {
+                hideQuestion(() => {
+                    showQuestion(currQuestion, true);
+                });
             }
+            console.log(code);
         }
     });
-
     $('.question').click(function () {
-        showQuestion($(this).attr('text'), $(this).attr('image'), $(this).attr('audio'));
+        let question = JSON.parse($(this).attr('question'));
+        currQuestion = question;
+        showQuestion(question);
         $(this).addClass('opened');
     });
 
@@ -67,6 +98,12 @@ $(document).ready(() => {
         console.log(q);
     });
 
+    socket.on('queue', (queue) => {
+        $('.currQuestion-queue').html('');
+        for (let i = 0; i < queue.length; i++) {
+            $('.currQuestion-queue').append($(`<div class='queue-member' style='background-color:${queue[i]}'></div>`));
+        }
+    });
     /*
     setInterval(() => {
         $.get('/status', (data) => {
