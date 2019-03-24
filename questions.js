@@ -455,42 +455,42 @@ module.exports = {
 		"Русские сериалы": {
 			1: {
 				q: {
-					image: "2/Герои.jpg"
+					audio: "3/Ranetki - Season 1 Opening (www.mp3cut.ru).mp3"
 				},
 				a: {
-					text: "Герои"
+					image: "3/34714-fcb9554e.jpeg"
 				}
 			},
 			2: {
 				q: {
-					image: "2/Зена - королева воинов.jpg"
+					audio: "3/Кадетство - главная песня (www.mp3cut.ru) (1).mp3"
 				},
 				a: {
-					text: "Зена - королева воинов"
+					image: "3/iphone360_260185.jpg"
 				}
 			},
 			3: {
 				q: {
-					image: "2/Комиссар Рекс.jpg"
+					audio: "3/Моя - прекрасная (www.mp3cut.ru).mp3"
 				},
 				a: {
-					text: "Комиссар Рекс"
+					image: "3/4049.jpg"
 				}
 			},
 			4: {
 				q: {
-					image: "2/Сабрина - маленькая ведьма.jpg"
+					audio: "3/_“Не родись красивой_“, заставка №1 (online-audio-converter.com).mp3"
 				},
 				a: {
-					text: "Сабрина - маленькая ведьма"
+					image: "3/267px-Постер_к_телесериалу_«Не_родись_красивой».jpg"
 				}
 			},
 			5: {
 				q: {
-					image: "2/Тайны смолвиля.jpg"
+					image: "3/2092900.jpg"
 				},
 				a: {
-					text: "Тайны смолвиля"
+					text: "Маргоша"
 				}
 			}
 		},
