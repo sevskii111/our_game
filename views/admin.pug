@@ -1,5 +1,6 @@
 extends layout
 block content
+    script(src="/js/socket.js")
     script(src="/js/main.js")
     - for (var i = 1;i <= 3;i++)
         table.page(pageInd=i)
@@ -11,8 +12,10 @@ block content
                         each question in questions[i][category]
                             - points += i * 100
                             td
-                                div.question(text=question)
+                                div.question(text=question.text image=question.image audio=question.audio)
                                     span= points
     .currQuestion.hidden
+        .currQuestion-image
         .currQuestion-text
+        .currQuestion-audio
         .currQuestion-queue

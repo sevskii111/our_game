@@ -1,4 +1,5 @@
 $(document).ready(() => {
+    var socket = io();
     //Admin part
     let state = 0;
     /*
@@ -10,13 +11,16 @@ $(document).ready(() => {
             $('.page').addClass('hidden');
             $(`.page[pageInd=${index}]`).removeClass('hidden');
         },
-        showQuestion = (text) => {
+        showQuestion = (text, image, audio) => {
             state = 1;
             $('.page').addClass('hidden');
             $.post('/ask', {
-                    text
+                    text,
+                    image,
+                    audio
                 },
-                () => {
+                (body) => {
+                    console.log(body);
                     $('.currQuestion-text').text(text);
                     $('.currQuestion').removeClass('hidden');
                 });
@@ -52,14 +56,18 @@ $(document).ready(() => {
                 enableQueue();
             }
         }
-        console.log(code);
     });
 
     $('.question').click(function () {
-        showQuestion($(this).attr('text'));
+        showQuestion($(this).attr('text'), $(this).attr('image'), $(this).attr('audio'));
         $(this).addClass('opened');
     });
 
+    socket.on('question', (q) => {
+        console.log(q);
+    });
+
+    /*
     setInterval(() => {
         $.get('/status', (data) => {
             let {
@@ -72,4 +80,5 @@ $(document).ready(() => {
             }
         });
     }, 500);
+    */
 });

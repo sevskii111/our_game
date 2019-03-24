@@ -1,4 +1,6 @@
-const express = require('express'),
+const
+    fs = require('fs'),
+    express = require('express'),
     bodyParser = require('body-parser'),
     cookieParser = require('cookie-parser'),
     session = require('express-session'),
@@ -7,7 +9,9 @@ const express = require('express'),
     config = require('./config.js'),
     questions = require('./questions.js');
 
-const app = express();
+const app = express(),
+    http = require('http').Server(app),
+    io = require('socket.io')(http);
 
 
 //App uses
@@ -57,7 +61,6 @@ passport.deserializeUser((username, done) => {
 
 
 //App routes
-let questionText = undefined;
 let queue = [];
 let queueEnabled = false;
 app.get('/', (req, res) => {
@@ -78,9 +81,15 @@ app.get('/', (req, res) => {
 app.post('/ask', (req, res) => {
     queueEnabled = false;
     if (req.isAuthenticated() && req.user.admin) {
-        questionText = req.body.text;
+        io.emit('question', {
+            text: req.body.text,
+            audio: null,
+            image: req.body.image ? fs.readFileSync(`./private/images/${req.body.image}`, 'base64') : null
+        });
         res.json({
-            success: 1
+            text: req.body.text,
+            audio: null,
+            image: req.body.image ? fs.readFileSync(`./private/images/${req.body.image}`, 'base64') : null
         });
     }
 });
@@ -97,7 +106,11 @@ app.get('/queue', (req, res) => {
 app.get('/close', (req, res) => {
     queue = [];
     if (req.isAuthenticated() && req.user.admin) {
-        questionText = undefined;
+        io.emit('question', {
+            text: null,
+            audio: null,
+            image: null
+        });
         res.json({
             success: 1
         });
@@ -136,7 +149,12 @@ app.get('/status', (req, res) => {
     });
 });
 /////
-app.listen(config.port, (err) => {
+io.on('connection', (socket) => {
+
+    console.log('a user connected');
+});
+////
+http.listen(config.port, (err) => {
     if (err) {
         console.log(`Err listening: ${err}`);
     } else {
