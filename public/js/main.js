@@ -71,5 +71,5 @@ $(document).ready(() => {
                 $('.currQuestion-queue').append($(`<div class='queue-member' style='background-color:${queue[i]}'></div>`));
             }
         });
-    }, 2000);
+    }, 500);
 });

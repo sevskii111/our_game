@@ -19,13 +19,21 @@ module.exports = {
             username: "3",
             password: "3"
         }, {
-            color: "#311b92",
+            color: "#FF2DEA",
             username: "4",
             password: "4"
         }, {
-            color: "#1a237e",
+            color: "#00FFED",
             username: "5",
             password: "5"
+        }, {
+            color: "#43FF00",
+            username: "6",
+            password: "6"
+        }, {
+            color: "#FFE900",
+            username: "7",
+            password: "7"
         }
     ],
     timeout: 3000,
