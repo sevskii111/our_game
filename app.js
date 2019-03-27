@@ -1,6 +1,5 @@
 const
     fs = require('fs'),
-    ms = require('mediaserver'),
     express = require('express'),
     bodyParser = require('body-parser'),
     cookieParser = require('cookie-parser'),

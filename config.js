@@ -2,40 +2,44 @@ module.exports = {
     users: [{
             admin: true,
             username: "admin",
-            password: "admin"
+            password: "admin1"
         },
         {
-            color: "#b71c1c",
+            color: "#8BD2D8",
             username: "1",
-            password: "1"
+            password: "6r3p7w"
         },
         {
-            color: "#880e4f",
+            color: "#C6A68F",
             username: "2",
-            password: "2"
+            password: "af2sdq"
         },
         {
-            color: "#4a148c",
+            color: "#F15E3D",
             username: "3",
-            password: "3"
+            password: "9zbm4j"
         }, {
-            color: "#FF2DEA",
+            color: "#CC3B7C",
             username: "4",
-            password: "4"
+            password: "us5rz9"
         }, {
-            color: "#00FFED",
+            color: "#56704B",
             username: "5",
-            password: "5"
+            password: "mv6ezd"
         }, {
-            color: "#43FF00",
+            color: "#EFCB5D",
             username: "6",
-            password: "6"
+            password: "h41da1"
         }, {
-            color: "#FFE900",
+            color: "#EFCB5D",
             username: "7",
-            password: "7"
+            password: "yl3hvo"
+        }, {
+            color: "#795446",
+            username: "7",
+            password: "0369mz"
         }
     ],
     timeout: 3000,
-    port: 3000
+    port: 80
 }
