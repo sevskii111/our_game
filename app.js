@@ -73,7 +73,9 @@ app.get('/', (req, res) => {
                 questions: questions
             });
         } else {
-            res.render('user');
+            res.render('user', {
+                color: req.user.color
+            });
         }
     } else {
         res.render('login');
@@ -174,7 +176,7 @@ io.on('connection', (socket) => {
     socket.emit('check', startTime);
 });
 ////
-http.listen(process.env.PORT || config.port , (err) => {
+http.listen(process.env.PORT || config.port, (err) => {
     if (err) {
         console.log(`Err listening: ${err}`);
     } else {

@@ -10,7 +10,7 @@ html {
 .currQuestion {
     height: 100%;
     width: 100%;
-    font-size: 2em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,4 +118,12 @@ img{
 .queue-member {
     width: 48px;
     height: 100%;
+}
+
+.colorMarker{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
 }

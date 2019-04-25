@@ -2,42 +2,42 @@ module.exports = {
     users: [{
             admin: true,
             username: "admin",
-            password: "admin1"
+            password: "admin2"
         },
         {
             color: "#8BD2D8",
             username: "1",
-            password: "6r3p7w"
+            password: "naruto"
         },
         {
             color: "#C6A68F",
             username: "2",
-            password: "af2sdq"
+            password: "jojo"
         },
         {
             color: "#F15E3D",
             username: "3",
-            password: "9zbm4j"
+            password: "miku"
         }, {
             color: "#CC3B7C",
             username: "4",
-            password: "us5rz9"
+            password: "saitama"
         }, {
             color: "#56704B",
             username: "5",
-            password: "mv6ezd"
+            password: "rem"
         }, {
             color: "#EFCB5D",
             username: "6",
-            password: "h41da1"
+            password: "anime"
         }, {
             color: "#EFCB5D",
             username: "7",
-            password: "yl3hvo"
+            password: "liza"
         }, {
             color: "#795446",
-            username: "7",
-            password: "0369mz"
+            username: "8",
+            password: "monika"
         }
     ],
     timeout: 3000,

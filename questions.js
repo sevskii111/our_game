@@ -27,682 +27,702 @@ module.exports = {
 			}
 		}
 	},
-	1: {
-		"Актеры и актрисы": {
-			1: {
-				q: {
-					image: "1/Дейзи ридли.jpg"
+	"1": {
+		"50 на 50": {
+			"1": {
+				"q": {
+					"text": "Эверест - самая высокая гора на планете. \r\n(Правда, Ложь)"
 				},
-				a: {
-					text: "Дейзи ридли"
+				"a": {
+					"text": "Ложь"
 				}
 			},
-			2: {
-				q: {
-					image: "1/Марк Шеппард.jpg"
+			"2": {
+				"q": {
+					"text": "Японцы - лидеры по продолжительности жизни. \r\n (Правда, Ложь)"
 				},
-				a: {
-					text: "Марк Шеппард"
+				"a": {
+					"text": "Ложь"
 				}
 			},
-			3: {
-				q: {
-					image: "1/Моника Беллуччи.jpg"
+			"3": {
+				"q": {
+					"text": "Между Северной Кореей и Финляндией находится только одна страна.\r\n (Правда, Ложь)"
 				},
-				a: {
-					text: "Моника Беллуччи"
+				"a": {
+					"text": "Правда"
 				}
 			},
-			4: {
-				q: {
-					image: "1/Сигурни Уивер.jpg"
+			"4": {
+				"q": {
+					"text": "Рио-де-Жанейро был столицей Португалии.\r\n (Правда, Ложь)"
 				},
-				a: {
-					text: "Сигурни Уивер"
-				}
-			},
-			5: {
-				q: {
-					image: "1/Томас Сангстер.jpg"
-				},
-				a: {
-					text: "Томас Сангстер"
+				"a": {
+					"text": "Правда"
 				}
 			}
 		},
-		"Сериал по кадру": {
-			1: {
-				q: {
-					image: "1/Демоны да Винчи.jpg"
+		"Места": {
+			"1": {
+				"q": {
+					"image": "2011-GrandC-Ivtorov.jpg"
 				},
-				a: {
-					text: "Демоны да Винчи"
+				"a": {
+					"text": "Гранд-Каньон(Большой каньон)штат Аризона, США"
 				}
 			},
-			2: {
-				q: {
-					image: "1/Джессика Джонс.jpg"
+			"2": {
+				"q": {
+					"image": "4616_603x354.jpg"
 				},
-				a: {
-					text: "Джессика Джонс"
+				"a": {
+					"text": "Таймс сквер, Нью-Йорк"
 				}
 			},
-			3: {
-				q: {
-					image: "1/Доктор Кто.jpg"
+			"3": {
+				"q": {
+					"image": "2oqmi7k1ch.jpg"
 				},
-				a: {
-					text: "Доктор Кто"
+				"a": {
+					"text": "Диснейленд,  США"
 				}
 			},
-			4: {
-				q: {
-					image: "1/Сверхъестественное.jpg"
+			"4": {
+				"q": {
+					"image": "%D0%A5%D1%80%D0%B0%D0%BC_%D0%B2%D1%81%D0%B5%D1%85_%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%B9,_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C.jpg"
 				},
-				a: {
-					text: "Сверхъестественное"
-				}
-			},
-			5: {
-				q: {
-					image: "1/Тьма.jpg"
-				},
-				a: {
-					text: "Тьма"
+				"a": {
+					"text": "Храм всех религий, Казань"
 				}
 			}
 		},
-		"Фильмы по кадру": {
-			1: {
-				q: {
-					image: "1/47 ронинов.jpg"
+		"Биология": {
+			"1": {
+				"q": {
+					"text": "Назовите имя известного учёного, который ввёл понятие естественного отбора."
 				},
-				a: {
-					text: "47 ронинов"
+				"a": {
+					"text": "Чарльз Дарвин"
 				}
 			},
-			2: {
-				q: {
-					image: "1/Бегущий в лабиринте.jpg"
+			"2": {
+				"q": {
+					"text": "Как называется выводок щенков?"
 				},
-				a: {
-					text: "Бегущий в лабиринте"
+				"a": {
+					"text": "Помёт"
 				}
 			},
-			3: {
-				q: {
-					image: "1/Золотой компас.jpg"
+			"3": {
+				"q": {
+					"text": "Чем лечат бактериальную инфекцию у людей?"
 				},
-				a: {
-					text: "Золотой компас"
+				"a": {
+					"text": "Антибиотками"
 				}
 			},
-			4: {
-				q: {
-					image: "1/Илюзия обмана.jpg"
+			"4": {
+				"q": {
+					"text": "Древнейшая из медицинских дисциплин. (Наука)"
 				},
-				a: {
-					text: "Илюзия обмана"
-				}
-			},
-			5: {
-				q: {
-					image: "1/Шаг вперед.jpg"
-				},
-				a: {
-					text: "Шаг вперед"
+				"a": {
+					"text": "Анатомия"
 				}
 			}
 		},
-		"Это вы называете косплеем": {
-			1: {
-				q: {
-					image: "1/Дональд Дак 2.jpg"
+		"Литература": {
+			"1": {
+				"q": {
+					"text": "Кодовое слово, по которому открывались двери одной подземной сокровищницы?"
 				},
-				a: {
-					image: "1/Дональд Дак 1.jpg"
+				"a": {
+					"text": "Сезам."
 				}
 			},
-			2: {
-				q: {
-					image: "1/Красавица и чудовище 2.jpg"
+			"2": {
+				"q": {
+					"text": "Имя богатыря из города Мурома?"
 				},
-				a: {
-					image: "1/Красавица и чудовище 1.jpg"
+				"a": {
+					"text": "Илья"
 				}
 			},
-			3: {
-				q: {
-					image: "1/Марио 2.jpg"
+			"3": {
+				"q": {
+					"text": "Древнее народное сказание о легендарных героях, богах, о явлениях природы?"
 				},
-				a: {
-					image: "1/Марио 1.jpg"
+				"a": {
+					"text": "Миф."
 				}
 			},
-			4: {
-				q: {
-					image: "1/Пикачу 2.jpg"
+			"4": {
+				"q": {
+					"text": "Как звали женщину, которую Шерлок Холмс называл не иначе как «эта женщина»?"
 				},
-				a: {
-					image: "1/Пикачу 1.jpg"
+				"a": {
+					"text": "Ирен Адлер"
+				}
+			}
+		},
+		"Спорт": {
+			"1": {
+				"q": {
+					"text": "Единственная страна-участница всех Чемпионатов Мира по футболу"
+				},
+				"a": {
+					"text": "Бразилия"
 				}
 			},
-			5: {
-				q: {
-					image: "1/Урсула 2.jpg"
+			"2": {
+				"q": {
+					"text": "Самый популярный вид спорта в кино"
 				},
-				a: {
-					image: "1/Урсула 1.jpg"
+				"a": {
+					"text": "Бокс"
+				}
+			},
+			"3": {
+				"q": {
+					"text": "Этот снаряд может достигать скорости 270 км/ч"
+				},
+				"a": {
+					"text": "Волан"
+				}
+			},
+			"4": {
+				"q": {
+					"text": "Этот ученый был так же и вратарем сборной Дании по футболу"
+				},
+				"a": {
+					"text": "Нильсон Бор"
 				}
 			}
 		}
 	},
-	2: {
-		"Мультик по песне": {
-			1: {
-				q: {
-					audio: "2/Jimmy - Neutron (www.mp3cut.ru).mp3"
+	"2": {
+		"Мультфильм по скриншоту": {
+			"1": {
+				"q": {
+					"image": "1326010680_kj23n3wmf3.jpg"
 				},
-				a: {
-					image: "2/Kartinki-i-raskraski-Dzhimmi-Neytron-dlya-detey-950x760.jpg"
+				"a": {
+					"text": "Крутые бобры"
 				}
 			},
-			2: {
-				q: {
-					audio: "2/Aaahh!!! - Real (www.mp3cut.ru).mp3"
+			"2": {
+				"q": {
+					"image": "4f2f6a93b2c9d32df418133e6e00bcfc_1879406420_130105280902_800px-o.jpeg"
 				},
-				a: {
-					image: "2/1_Dx8mqf2E48G4C3ynh2heKA.png"
+				"a": {
+					"text": "Ёжик в тумане"
 				}
 			},
-			3: {
-				q: {
-					audio: "2/Zhizn+i+Priklyucheniya+Robota+Podrostka+glavnaya+tema_muzlishko.ru (www.mp3cut.ru).mp3"
+			"3": {
+				"q": {
+					"image": "chto-s-endi-scene.jpg"
 				},
-				a: {
-					image: "2/MLaaTR_Big.png"
+				"a": {
+					"text": "Что с Энди? "
 				}
 			},
-			4: {
-				q: {
-					audio: "2/Заставка - мультсериала (www.mp3cut.ru).mp3"
+			"4": {
+				"q": {
+					"image": "bd376b67b8cc34888883bfef8400b63d.jpg"
 				},
-				a: {
-					image: "2/MV5BMzNmNDJhNTYtOTM3Ni00YmJjLTgxNTItMTIzNGVjY2E2MzEzXkEyXkFqcGdeQXVyMjAxMTI4Njc@._V1_.jpg"
-				}
-			},
-			5: {
-				q: {
-					audio: "2/Nickelodeon+As+Told+by+GingerKak+govorit+Dzhindzher_muzlishko.ru (1) (www.mp3cut.ru).mp3"
-				},
-				a: {
-					image: "2/as-told-by-ginger.jpg"
+				"a": {
+					"text": "Бен 10 "
 				}
 			}
 		},
-		"Немного музыки от автора": {
-			1: {
-				q: {
-					audio: "2/ACDC Highway To Hell.mp3"
+		"Перевертыши": {
+			"1": {
+				"q": {
+					"text": "Спокойные кошки"
 				},
-				a: {
-					text: "ACDC-Highway To Hell"
+				"a": {
+					"text": "Бешеные псы"
 				}
 			},
-			2: {
-				q: {
-					audio: "2/Günther-Ding Dong Song.mp3"
+			"2": {
+				"q": {
+					"text": "Двое на улице"
 				},
-				a: {
-					text: "Günther - Ding Dong Song"
+				"a": {
+					"text": "Один дома"
 				}
 			},
-			3: {
-				q: {
-					audio: "2/Queen-we are the champions.mp3"
+			"3": {
+				"q": {
+					"text": "Прокурор бога"
 				},
-				a: {
-					text: "Queen - We are the champions"
+				"a": {
+					"text": "Адвокат дьявола"
 				}
 			},
-			4: {
-				q: {
-					audio: "2/The Irish Rovers – Drunken Sailor.mp3"
+			"4": {
+				"q": {
+					"text": "Море святых"
 				},
-				a: {
-					text: "The Irish Rovers – Drunken Sailor"
-				}
-			},
-			5: {
-				q: {
-					audio: "2/Thousand Foot Krutch-The end is where we begin.mp3"
-				},
-				a: {
-					text: "Thousand Foot Krutch - The end is where we begin"
+				"a": {
+					"text": "Остров проклятых"
 				}
 			}
 		},
-		"Олдскульные сериал (зарубеж)": {
-			1: {
-				q: {
-					image: "2/Герои.jpg"
+		"OST кино": {
+			"1": {
+				"q": {
+					"audio": "GosT%20Bustters%20-%20%D0%9E%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%97%D0%B0%20%D0%9F%D1%80%D0%B8%D0%B2%D0%B8%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC.mp3"
 				},
-				a: {
-					text: "Герои"
+				"a": {
+					"text": "Охотники за приведениями"
 				}
 			},
-			2: {
-				q: {
-					image: "2/Зена - королева воинов.jpg"
+			"2": {
+				"q": {
+					"audio": "disturbed-another-way-to-die(zvuqa.net).mp3"
 				},
-				a: {
-					text: "Зена - королева воинов"
+				"a": {
+					"text": "Квант Милосердия"
 				}
 			},
-			3: {
-				q: {
-					image: "2/Комиссар Рекс.jpg"
+			"3": {
+				"q": {
+					"audio": "OST%20Banlieue%2013%20-%20%D0%9E%D0%A1%D0%A2%2013%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD.mp3"
 				},
-				a: {
-					text: "Комиссар Рекс"
+				"a": {
+					"text": "13-ый район"
 				}
 			},
-			4: {
-				q: {
-					image: "2/Сабрина - маленькая ведьма.jpg"
+			"4": {
+				"q": {
+					"audio": "Soundtrack%20-%20You%20Never%20Can%20Tell%20(From%20Pulp%20Fiction).mp3"
 				},
-				a: {
-					text: "Сабрина - маленькая ведьма"
-				}
-			},
-			5: {
-				q: {
-					image: "2/Тайны смолвиля.jpg"
-				},
-				a: {
-					text: "Тайны смолвиля"
+				"a": {
+					"text": "Криминальное Чтиво"
 				}
 			}
 		},
-		"Пиксели": {
-			1: {
-				q: {
-					image: "2/Король Лев 2.jpg"
+		"Сериал по скриншоту ": {
+			"1": {
+				"q": {
+					"image": "misfits.JPG"
 				},
-				a: {
-					image: "2/Король Лев 1.jpg"
+				"a": {
+					"text": "\"Отбросы\""
 				}
 			},
-			2: {
-				q: {
-					image: "2/Май Литтл Пони 2.jpg"
+			"2": {
+				"q": {
+					"image": "maxresdefault%20(1).jpg"
 				},
-				a: {
-					image: "2/Май Литтл Пони.jpg"
+				"a": {
+					"text": "\"Готэм\""
 				}
 			},
-			3: {
-				q: {
-					image: "2/Моана 2.jpg"
+			"3": {
+				"q": {
+					"image": "njdfhbob.JPG"
 				},
-				a: {
-					image: "2/Моана.jpg"
+				"a": {
+					"text": "\"Чернобыль: Зона отчуждения\""
 				}
 			},
-			4: {
-				q: {
-					image: "2/Спанч Боб 2.jpg"
+			"4": {
+				"q": {
+					"image": "383d0eda0aaa72dfe35cc55fa75616bb.jpg"
 				},
-				a: {
-					image: "2/Спанч Боб.jpg"
+				"a": {
+					"text": "\"Друзья\""
+				}
+			}
+		},
+		"Актерский состав": {
+			"1": {
+				"q": {
+					"text": "Леонардо ДиКаприо, Эллен Пейдж, Джозеф Гордон-Левитт, Том Харди"
+				},
+				"a": {
+					"text": "Начало"
 				}
 			},
-			5: {
-				q: {
-					image: "2/Том и Джери.jpg"
+			"2": {
+				"q": {
+					"text": "Орландо Блум, Йен Маккелен, Кристофер Ли, Вигго Мортенсен"
 				},
-				a: {
-					image: "2/Том и Джерри 1.jpg"
+				"a": {
+					"text": "Властелин Колец"
+				}
+			},
+			"3": {
+				"q": {
+					"text": "Майкл Киттон, Эдвард Нортон, Эмма Стоун, Наоми Уоттс"
+				},
+				"a": {
+					"text": "Бердмэн"
+				}
+			},
+			"4": {
+				"q": {
+					"text": "Зак Галифианакис, Брэдли Купер, Эд Хелмс, Джастин Барта"
+				},
+				"a": {
+					"text": "Мальчишник В Вегасе"
 				}
 			}
 		}
 	},
-	3: {
-		"АliExpress (для чего)": {
-			1: {
-				q: {
-					image: "3/abs.jpg"
+	"3": {
+		"Рэп": {
+			"1": {
+				"q": {
+					"audio": "FACE%20-%20%D0%AE%D0%9C%D0%9E%D0%A0%D0%98%D0%A1%D0%A2%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/HTB1dqb_cTCWBKNjSZFtq6yC3FXaO.jpg"
+				"a": {
+					"text": "Face - Юморист"
 				}
 			},
-			2: {
-				q: {
-					image: "3/HTB17x1HX0jvK1RjSspiq6AEqXXar.jpg"
+			"2": {
+				"q": {
+					"audio": "GONE.Fludd%20-%20%D0%9C%D0%90%D0%9C%D0%91%D0%9B%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/Screenshot_4.png"
+				"a": {
+					"text": "GONE.Fludd - Мамбл"
 				}
 			},
-			3: {
-				q: {
-					image: "3/Screenshot_1_1.png"
+			"3": {
+				"q": {
+					"audio": "Sheck%20Wes%20-%20Mo%20Bamba%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/yaponskie-zhenskie-tufli-v-vide-golubej-3.jpg"
+				"a": {
+					"text": "Sheck Wes - Mo Bamba"
 				}
 			},
-			4: {
-				q: {
-					image: "3/Screenshot_5.png"
+			"4": {
+				"q": {
+					"audio": "twenty%20one%20pilots%20-%20Levitate%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/HTB1676EX5zxK1Rjy1zkq6yHrVXas.jpg"
-				}
-			},
-			5: {
-				q: {
-					image: "3/Screenshot_7.png"
-				},
-				a: {
-					image: "3/Mobile-phone-panties-one-piece-thong-underwear-bra-dust-plug-swimwear-for-apple-5s-general-mobile.jpg"
+				"a": {
+					"text": " Twenty One Pilots - Levitate"
 				}
 			}
 		},
-		"Ох уж этот косплей": {
-			1: {
-				q: {
-					image: "3/1.png"
+		"Рок": {
+			"1": {
+				"q": {
+					"audio": "Avenged%20Sevenfold%20-%20Carry%20On%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/2.png"
+				"a": {
+					"text": "Avenged Sevenfold - Carry On"
 				}
 			},
-			2: {
-				q: {
-					image: "3/3.png"
+			"2": {
+				"q": {
+					"audio": "Linkin%20Park%20-%20New%20Divide%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/4.png"
+				"a": {
+					"text": "Linkin Park - New Divide"
 				}
 			},
-			3: {
-				q: {
-					image: "3/5.png"
+			"3": {
+				"q": {
+					"audio": "Lindemann%20feat.%20Haftbefehl%20-%20Mathematik%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/6.png"
+				"a": {
+					"text": "Lindemann - Mathematik"
 				}
 			},
-			4: {
-				q: {
-					image: "3/7.png"
+			"4": {
+				"q": {
+					"audio": "Imagine%20Dragons%20-%20On%20Top%20Of%20The%20World%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/8.png"
-				}
-			},
-			5: {
-				q: {
-					image: "3/9.png"
-				},
-				a: {
-					image: "3/10.png"
+				"a": {
+					"text": "Imagine Dragons - On Top Of The World"
 				}
 			}
 		},
-		"Русские сериалы": {
-			1: {
-				q: {
-					audio: "3/Ranetki - Season 1 Opening (www.mp3cut.ru).mp3"
+		"Поп": {
+			"1": {
+				"q": {
+					"audio": "The%20Black%20Eyed%20Peas%20-%20I%20Gotta%20Feeling%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/34714-fcb9554e.jpeg"
+				"a": {
+					"text": "The Black Eyed Peace - I Gotta Feeling"
 				}
 			},
-			2: {
-				q: {
-					audio: "3/Кадетство - главная песня (www.mp3cut.ru) (1).mp3"
+			"2": {
+				"q": {
+					"audio": "Katy%20Perry%20-%20I%20Kissed%20A%20Girl%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/iphone360_260185.jpg"
+				"a": {
+					"text": "Katy Perry - I kissed a Girl"
 				}
 			},
-			3: {
-				q: {
-					audio: "3/Моя - прекрасная (www.mp3cut.ru).mp3"
+			"3": {
+				"q": {
+					"audio": "Lady%20Gaga%20-%20Bad%20Romance%20(1)%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/4049.jpg"
+				"a": {
+					"text": "Lady Gaga - Bad Romance"
 				}
 			},
-			4: {
-				q: {
-					audio: "3/_“Не родись красивой_“, заставка №1 (online-audio-converter.com).mp3"
+			"4": {
+				"q": {
+					"audio": "%E2%96%B2Rihanna%20feat.%20Jay-Z%20-%20Umbrella%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/267px-Постер_к_телесериалу_«Не_родись_красивой».jpg"
-				}
-			},
-			5: {
-				q: {
-					image: "3/2092900.jpg"
-				},
-				a: {
-					text: "Маргоша"
+				"a": {
+					"text": "Rihanna - Umbrella"
 				}
 			}
 		},
-		"Фотошоп": {
-			1: {
-				q: {
-					image: "3/1_1.png"
+		"Так вот как она называется": {
+			"1": {
+				"q": {
+					"audio": "SunStroke%20Project%20&%20Olia%20Tira%20-%20Run%20Away%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/2_1.png"
+				"a": {
+					"text": "SunStroke Project & Olia Tira - Run Away"
 				}
 			},
-			2: {
-				q: {
-					image: "3/3_1.png"
+			"2": {
+				"q": {
+					"audio": "Faul%20&%20Wad%20Ad,%20Pnau%20-%20Changes%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/4_1.png"
+				"a": {
+					"text": "Faul & Wad Ad, Pnau - Changes"
 				}
 			},
-			3: {
-				q: {
-					image: "3/5_1.png"
+			"3": {
+				"q": {
+					"audio": "Edith%20Piaf%20-%20Non,%20je%20ne%20regrette%20rien%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/6_1.png"
+				"a": {
+					"text": "Edith Piaf - Non, je ne regrette rien"
 				}
 			},
-			4: {
-				q: {
-					image: "3/7_1.png"
+			"4": {
+				"q": {
+					"audio": "O-Zone%20-%20Dragostea%20Din%20Tei%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/8_1.png"
+				"a": {
+					"text": "O-Zone - Dragostea Din Tei "
+				}
+			}
+		},
+		"Назад в прошлое": {
+			"1": {
+				"q": {
+					"audio": "Three%20Days%20Grace%20-%20I%20Hate%20Everything%20About%20You%20(www.mp3cut.ru).mp3"
+				},
+				"a": {
+					"text": "Three Days Grace - I Hate Everything About You"
 				}
 			},
-			5: {
-				q: {
-					image: "3/9_1.png"
+			"2": {
+				"q": {
+					"audio": "Eminem%20-%20Without%20Me%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					image: "3/10_1.png"
+				"a": {
+					"text": "Eminem - Without Me"
+				}
+			},
+			"3": {
+				"q": {
+					"audio": "Green%20Day%20-%20Boulevard%20of%20Broken%20Dreams%20(www.mp3cut.ru).mp3"
+				},
+				"a": {
+					"text": "Green Day - Boulevard of Broken Dreams"
+				}
+			},
+			"4": {
+				"q": {
+					"audio": "%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C%20%D0%B8%20%D0%A8%D1%83%D1%82%20-%20%D0%9A%D1%83%D0%BA%D0%BB%D0%B0%20%D0%BA%D0%BE%D0%BB%D0%B4%D1%83%D0%BD%D0%B0%20(www.mp3cut.ru).mp3"
+				},
+				"a": {
+					"text": "Король и Шут - Кукла колдуна"
 				}
 			}
 		}
 	},
-	4: {
-		"Бренд по персонажу": {
-			1: {
-				q: {
-					image: "4/уу.png"
+	"4": {
+		"Народы мира": {
+			"1": {
+				"q": {
+					"text": "В настоящее время данная  этноязыковая общность расселена на обширной территории Южной, Центральной и Восточной Европы и далее на восток — вплоть до Дальнего Востока России."
 				},
-				a: {
-					image: "4/information_items_1490.jpg"
+				"a": {
+					"image": "славяне.jpg"
 				}
 			},
-			2: {
-				q: {
-					image: "4/Screenshot_11.png"
+			"2": {
+				"q": {
+					"text": "Название этого народа возникло от ошибочного представления первых европейских мореплавателей (Христофора Колумба и других) конца XV века, считавших открытые ими заатлантические земли Индией."
 				},
-				a: {
-					image: "4/563.jpg"
+				"a": {
+					"image": "индейцы.jpg"
 				}
 			},
-			3: {
-				q: {
-					image: "4/michelin.jpg"
+			"3": {
+				"q": {
+					"text": "Сегодня в США проживает около 42 миллионов (?), часть (10-15%) из которых являются мулатами с некоторой примесью белой (около 17—18 %), индейской (около 3—5 %), а также азиатской и латиноамериканской крови (около 1—2 %)."
 				},
-				a: {
-					image: "4/30MICHELIN-OBIT-articleLarge.jpg"
+				"a": {
+					"image": "негры.jpg"
 				}
 			},
-			4: {
-				q: {
-					image: "4/IOyIeh-MJMU.jpg"
+			"4": {
+				"q": {
+					"text": "В настоящее время основная масса этого народа, преимущественно вследствие геноцида 1915 года, проживает за пределами своей исторической родины. "
 				},
-				a: {
-					image: "4/4767.jpeg"
-				}
-			},
-			5: {
-				q: {
-					image: "4/9014772.jpg"
-				},
-				a: {
-					image: "4/salon-evroseti-2.jpg"
+				"a": {
+					"image": "армяне.jpg"
 				}
 			}
 		},
-		"Песни из молодости": {
-			1: {
-				q: {
-					audio: "4/3OH!3 - STARSTRUKK (Feat. Katy Perry) [OFFICIAL MUSIC VID (1) (www.mp3cut.ru).mp3"
+		"Маскоты": {
+			"1": {
+				"q": {
+					"image": "%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D0%B4%D0%B7%D0%BE%D1%80.jpg"
 				},
-				a: {
-					text: "3OH!3 - STARSTRUKK"
+				"a": {
+					"text": "Роскомнадзор"
 				}
 			},
-			2: {
-				q: {
-					audio: "4/Avril Lavigne - Girlfriend (Official Music Video) (www.mp3cut.ru).mp3"
+			"2": {
+				"q": {
+					"image": "%D0%B3%D1%83%D0%B3%D0%BB.jpg"
 				},
-				a: {
-					text: "Avril Lavigne - Girlfriend"
+				"a": {
+					"text": "Гугл"
 				}
 			},
-			3: {
-				q: {
-					audio: "4/Backstreet Boys - Everybody (Backstreets Back) (Official Music Vide (www.mp3cut.ru).mp3"
+			"3": {
+				"q": {
+					"image": "%D0%B2%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F.png"
 				},
-				a: {
-					text: "Backstreet Boys - Everybody"
+				"a": {
+					"text": "Википедия"
 				}
 			},
-			4: {
-				q: {
-					audio: "4/Kesha - TiK ToK (Official Music Video) (www.mp3cut.ru).mp3"
+			"4": {
+				"q": {
+					"image": "%D0%B2%D0%B0%D1%82%D0%BD%D0%B8%D0%BA.jpg"
 				},
-				a: {
-					text: "Kesha - TiK ToK"
-				}
-			},
-			5: {
-				q: {
-					audio: "4/Morandi - Angels (Love Is The Answer) (www.mp3cut.ru).mp3"
-				},
-				a: {
-					text: "Morandi - Angels (Love Is The Answer)"
+				"a": {
+					"text": "Россия"
 				}
 			}
 		},
-		"Русские исполнители из моего плейлиста": {
-			1: {
-				q: {
-					audio: "4/Mujuice - Пожарники (www.mp3cut.ru).mp3"
+		"Шо с лицом?": {
+			"1": {
+				"q": {
+					"image": "zvezdi-fotoshop-2.jpg"
 				},
-				a: {
-					text: "Mujuice - Пожарники"
+				"a": {
+					"text": "Шварценггер/ Сталлоне"
 				}
 			},
-			2: {
-				q: {
-					audio: "4/nbsplv - waiting so long (www.mp3cut.ru).mp3"
+			"2": {
+				"q": {
+					"image": "%D1%82%D1%80%D0%B0%D0%B2%D0%BE%D0%BB%D1%82%D0%B0%D0%BA%D1%80%D1%83%D0%B7.jpg"
 				},
-				a: {
-					text: "nbsplv - waiting so long "
+				"a": {
+					"text": "Траволта/ Круз"
 				}
 			},
-			3: {
-				q: {
-					audio: "4/Tesla Boy ft Dasha Malygina - Fantasy (www.mp3cut.ru).mp3"
+			"3": {
+				"q": {
+					"image": "%D0%B8%D0%BB%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%D0%BB%D0%B0.jpg"
 				},
-				a: {
-					text: "Tesla Boy ft Dasha Malygina - Fantasy"
+				"a": {
+					"text": "Скала Джонсон/ Маск"
 				}
 			},
-			4: {
-				q: {
-					audio: "4/Ленинград - — (www.mp3cut.ru).mp3"
+			"4": {
+				"q": {
+					"image": "%D0%B1%D1%80%D0%B5%D0%B4%D0%B4%D0%B6%D0%BE%D0%BB%D0%B8.jpg"
 				},
-				a: {
-					text: "Ленинград"
-				}
-			},
-			5: {
-				q: {
-					audio: "4/ЛУНА - Бутылочка (www.mp3cut.ru).mp3"
-				},
-				a: {
-					text: "ЛУНА - Бутылочка"
+				"a": {
+					"text": "Джоли/ Питт"
 				}
 			}
 		},
-		"Старые ТВ-шоу": {
-			1: {
-				q: {
-					image: "4/7.jpg"
+		"Take me to church": {
+			"1": {
+				"q": {
+					"image": "%D0%BB%D1%83%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%81%D0%B2%D0%B5%D1%82.jpg"
 				},
-				a: {
-					text: "Сто к Одному"
+				"a": {
+					"text": "Лунный свет"
 				}
 			},
-			2: {
-				q: {
-					image: "4/31faa74d6bfc140b58b08bd559bdf80e_cropped_740x493_atop.jpg"
+			"2": {
+				"q": {
+					"image": "%D0%B3%D0%BE%D1%80%D0%B1%D0%B0%D1%82%D0%B0%D1%8F%20%D0%B3%D0%BE%D1%80%D0%B0.jpg"
 				},
-				a: {
-					text: "В мире животных"
+				"a": {
+					"text": "Горбатая гора"
 				}
 			},
-			3: {
-				q: {
-					image: "4/383.jpg"
+			"3": {
+				"q": {
+					"image": "%D0%B7%D0%BE%D0%B2%D0%B8%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D1%81%D0%B2%D0%BE%D0%B8%D0%BC%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BC.jpg"
 				},
-				a: {
-					text: "Сам себе режисёр"
+				"a": {
+					"text": "Зови меня своим именем"
 				}
 			},
-			4: {
-				q: {
-					image: "4/62552eb52b74ae0238869920b0c99c3a.jpeg"
+			"4": {
+				"q": {
+					"image": "%D0%B1%D0%BE%D0%B3%D0%B5%D0%BC%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%BF%D1%81%D0%BE%D0%B4%D0%B8%D1%8F.jpg"
 				},
-				a: {
-					text: "Слабое звено"
+				"a": {
+					"text": "Богемская рапсодия"
+				}
+			}
+		},
+		"Meme's Song": {
+			"1": {
+				"q": {
+					"audio": "Thomas%20-%20The%20Tank%20Engine%20(www.mp3cut.ru).mp3"
+				},
+				"a": {
+					"text": "Thomes The Tank Engine"
 				}
 			},
-			5: {
-				q: {
-					image: "4/64862.jpg"
+			"2": {
+				"q": {
+					"audio": "Blonde%20Redhead%20-%20For%20the%20Damaged%20Coda%20(www.mp3cut.ru).mp3"
 				},
-				a: {
-					text: "АБВГДейка"
+				"a": {
+					"text": "Blonde Redhead - For the Damaged Coda"
+				}
+			},
+			"3": {
+				"q": {
+					"audio": "Nyanners%20-%20Nyans%20not%20hot!%20(true%20320)%20(www.mp3cut.ru).mp3"
+				},
+				"a": {
+					"text": "Nyanners - Nyans not hot! "
+				}
+			},
+			"4": {
+				"q": {
+					"audio": "The%20Themesters%20-%20Frolic%20(From%20Curb%20Your%20Enthusiasm)%20(www.mp3cut.ru).mp3"
+				},
+				"a": {
+					"text": "Themesters - Frolic (From Curb Your Enthusiasm)"
+				}
+			}
+		}
+	},
+	"5": {
+		"жижа": {
+			"1": {
+				"q": {
+					"text": "Количество сезонов в JOJO's Bizarre Adventure?"
+				},
+				"a": {
+					"text": "5"
 				}
 			}
 		}
