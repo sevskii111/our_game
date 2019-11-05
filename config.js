@@ -7,41 +7,41 @@ module.exports = {
         {
             color: "#e6194B",
             username: "1",
-            password: "naruto"
+            password: "jojo"
         },
         {
             color: "#f58231",
             username: "2",
-            password: "jojo"
+            password: "naruto"
         },
         {
             color: "#ffe119",
             username: "3",
-            password: "miku"
+            password: "saitama"
         }, {
             color: "#bfef45",
             username: "4",
-            password: "saitama"
+            password: "miku"
         }, {
             color: "#3cb44b",
             username: "5",
-            password: "rem"
+            password: "anime"
         }, {
             color: "#42d4f4",
             username: "6",
-            password: "anime"
+            password: "rem"
         }, {
             color: "#000075",
             username: "7",
-            password: "liza"
+            password: "monika"
         }, {
             color: "#911eb4",
             username: "8",
-            password: "monika"
+            password: "ooshio"
         }, {
             color: "#f032e6",
             username: "9",
-            password: "ooshio"
+            password: "liza"
         }, {
             color: "#800000",
             username: "10",
