@@ -23,11 +23,12 @@ $(document).ready(() => {
             $.post('/ask', {
                     text: question[q].text,
                     image: question[q].image,
-                    audio: question[q].audio
+                    audio: question[q].audio,
+                    video: question[q].video
                 },
                 (body) => {
                     $('.currQuestion-text').text(body.text || '');
-                    if (!body.text) {
+                    if (body.image || body.audio || body.video) {
                         enableQueue();
                     }
                     if (body.image) {
@@ -42,6 +43,15 @@ $(document).ready(() => {
                         $.get('/audio', (data) => {
                             audio.append($(`<audio controls src="data:audio/ogg;base64, ${data}">`));
                             $('audio')[0].load();
+                            //$('audio')[0].play();
+                        });
+                    }
+                    if (body.video) {
+                        var video = $('.currQuestion-video');
+                        video.css('display', 'block');
+                        $.get('/video', (data) => {
+                            video.append($(`<video controls src="data:video/mp4;base64, ${data}">`));
+                            $('video')[0].load();
                             //$('audio')[0].play();
                         });
                     }
@@ -63,8 +73,13 @@ $(document).ready(() => {
                     $('audio')[0].pause();
                 }
 
+                if ($('video').length > 0) {
+                    $('video')[0].pause();
+                }
+
 
                 $('.currQuestion-audio').html('');
+                $('.currQuestion-video').html('');
                 showPage(currPage);
                 callback();
             });

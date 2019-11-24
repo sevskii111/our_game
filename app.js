@@ -7,7 +7,7 @@ const
     passport = require('passport'),
     LocalStrategy = require('passport-local').Strategy,
     config = require('./config.js'),
-    questions = require('./questions.js');
+    questions = require('./questions.json');
 
 const app = express(),
     http = require('http').Server(app),
@@ -15,6 +15,7 @@ const app = express(),
 
 //
 let currAudio = null;
+let currVideo = null;
 //
 
 //App uses
@@ -85,11 +86,20 @@ app.get('/', (req, res) => {
 let question = {
     text: null,
     image: null,
-    audio: null
+    audio: null,
+    video: null
 }
 app.get('/audio', (req, res) => {
     if (currAudio) {
         fs.createReadStream(`./private/sounds/${currAudio}`, 'base64').pipe(res);
+    } else {
+        res.send("");
+    }
+});
+
+app.get('/video', (req, res) => {
+    if (currVideo) {
+        fs.createReadStream(`./private/videos/${currVideo}`, 'base64').pipe(res);
     } else {
         res.send("");
     }
@@ -101,10 +111,12 @@ app.post('/ask', (req, res) => {
     queueEnabled = false;
     if (req.isAuthenticated() && req.user.admin) {
         currAudio = req.body.audio;
+        currVideo = req.body.video;
         question = {
             text: req.body.text,
             image: req.body.image ? fs.readFileSync(`./private/images/${req.body.image}`, 'base64') : null,
-            audio: req.body.audio ? true : false
+            audio: req.body.audio ? true : false,
+            video: req.body.video ? true : false
         };
         io.emit('question', question);
         res.json(question);
@@ -126,7 +138,8 @@ app.get('/close', (req, res) => {
         io.emit('question', {
             text: null,
             audio: null,
-            image: null
+            image: null,
+            video: null
         });
         res.json({
             success: 1

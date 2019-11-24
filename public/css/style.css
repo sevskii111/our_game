@@ -14,15 +14,15 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.currQuestion-audio {
-    margin: 0 auto;
+video {
+    width: 800px;
 }
 
 img {
-    width: 300px;
-    margin: 0 auto;
+    width: 800px;
 }
 
 body {
