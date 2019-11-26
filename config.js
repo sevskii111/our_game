@@ -2,38 +2,38 @@ module.exports = {
     users: [{
             admin: true,
             username: "admin",
-            password: "admin3"
+            password: "sevskii"
         },
         {
             color: "#e6194B",
             username: "1",
-            password: "jojo"
+            password: "Bulbasaur"
         },
         {
             color: "#f58231",
             username: "2",
-            password: "naruto"
+            password: "Ivysaur"
         },
         {
             color: "#ffe119",
             username: "3",
-            password: "saitama"
+            password: "Venusaur"
         }, {
             color: "#bfef45",
             username: "4",
-            password: "miku"
+            password: "Charmander"
         }, {
             color: "#3cb44b",
             username: "5",
-            password: "anime"
+            password: "Charizard"
         }, {
             color: "#42d4f4",
             username: "6",
-            password: "rem"
+            password: "Squirtle"
         }, {
             color: "#000075",
             username: "7",
-            password: "monika"
+            password: "Wartortle"
         }, {
             color: "#911eb4",
             username: "8",
